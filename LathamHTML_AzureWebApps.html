@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Azure Web Apps & Deployment Slots</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" media="screen">
+</head>
+<body>
+
+<header>
+
+  <hgroup>
+    <h1>Channel-Latham</h1>
+    <h2>Azure Web Apps</h2>
+  </hgroup>
+
+</header>
+
+<section>
+
+  <nav>
+    <ul>
+      <li><a href="#Intro">Introduction</a></li>
+      <li><a href="#Ben">Benefits</a></li>
+      <li><a href="#Ex">Example</a></li>
+      <li><a href="#Add">Refences</a></li>
+      <li><a href="#Con">Conclusion</a></li>
+    </ul>
+  </nav>
+
+<article>
+
+<h1>Deployment Slots for Azure Web Apps</h1>
+
+<h2 id="Intro">Introduction</h2>
+
+<p>One of the more intriguing features of Microsoft Azure's Web Apps is the use of deployment slots. According to Microsoft Azure Essentials: Azure Web Apps for Developers, "A deployment slot technically is an independent web app with its own content, configuration, and even a unique host name." In prior environments I've managed, deploying staging environments to production can be complex, time consuming and a little risky to roll back. Deployment slots help address all three of these issues. </p>
+
+<figure>
+  <img src="DS_Funny.png" alt="A diagram of the high level work flow using deployment slots">
+  <figcaption>Figure 1. Depicts how a dev environment can be published to staging, tested and then easliy swapped into production for final delivery.</figcaption>
+</figure>
+
+<p>Delpoyment has come a long way sense I started deploying applications. A click of a button provides a simple and instantaneous method for deploying a staged environment to production. Had deployment slots been around when I started deploying .NET applictions 12 years ago, it would have saved me a lot of late nights.
+<aside>"Had deployment slots been around when I started deploying .NET applictions 12 years ago, it would have saved me a lot of late nights." - Ryan Latham, IT Director</aside>
+
+<h2 id="Ben">Benefits of Deployment Slots</h2>
+
+<p>We've already discussed the ease of deployment and the ability to deploy to a staging environment without impacting production. There are several excellent benefits and use cases for deployment slots, including:<br>
+  <ul>
+  <li>While independent environments, deployment slots use the same underpinning infrastructure and platform components, which ensures that the user experience in staging is nearly identical to production in terms of performance.</li>
+  <li>It is easy to deploy an A/B testing scenario to help measure user preferences and experience. A/B testing, aka testing in production, is a technique whereby different users of a website will be randomly presented with different versions of the site. This allows site owners to gauge different user reactions such as bounce rate, conversion rate, etc.</li>
+  <li>An application "warm up" can be performed if your application has lengthy initialization code. This avoids long delays from a cold start for the first uses visiting the newly deployed site.</li>
+  <li>One of the more beneficial features from a risk management perspective, is the ability to quickly role back in the event the new version is not working as expected.</li>
+  </ul>
+<br>
+Microsoft has listened to the system administrators, engineers and developers of the IT community and really developed a great product with amazing features in Azure Web Apps.
+</p>
+
+<h2 id="Ex">Example of a Deployment Slot</h2>
+<p>Here is a nice demo that shows how to create a deployment slot:<br>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/cavW-t4rItY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h2 id="Add">Additional Resources for Deployment Slots</h2>
+  <ul>
+  <li><a href="https://docs.microsoft.com/en-us/azure/app-service/deploy-staging-slots" target="_blank">Microsoft Documentation on Setting Up and Configuring Deploment Slots</a></li>
+  <li><a href="https://blogs.msdn.microsoft.com/mvpawardprogram/2017/05/16/deploy-app-azure-app-service/" target="_blank">A Microsoft Blog by Afzaal Ahmad Zeeshan on Deployment Slots</a></li>
+  <li><a href="https://stackify.com/azure-deployment-slots/" target="_blank">A non-Microsoft article from Stackify on Deployment Slots</a></li>
+  </ul>
+<h2 id="Con">Conclusion</h2>
+
+<p>Deployment slots are just one more advancement in the world of development and dev ops that help achieve the goal of getting amazing functionality to users in a rapid, secure and stable process. It's pretty cool to see what the last decade has brought us in deployment, I can't wait to see what the next decade brings.</p>
+</article>
+</section>
+
+<footer>
+
+<small>Copyright © 2019 Ryan Latham</small>
+
+</footer>
+</body>
+</html>

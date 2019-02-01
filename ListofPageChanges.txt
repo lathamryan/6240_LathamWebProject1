@@ -1,0 +1,11 @@
+Items changed from Bob Taber's HTML/CSS project:
+1. Changed header title and color.
+2. Changed the font to Georgia default.
+3. Instead of using site navigation, pulled navigation out of the header and changed to page navigation for all sections in the article.
+4. Inserted photo and provided auto scaling to ensure photo scales with article depending on screen size.
+5. Changed color for the aside call out box.
+6. Provided unordered list for benefits section.
+7. Embedded a YouTube video.
+8. Provided text based hyperlinks for an unordered list.
+9. Changed the page background color.
+10. Changed footer to same color as header.
